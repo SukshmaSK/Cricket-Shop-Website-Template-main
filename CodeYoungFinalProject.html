@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Eagle Cricket</title>
+    
+</head>
+<body>
+    <div class="splash">
+		<img class="splash-img"src="CompanyLogo.png"/><br>
+		<h1 class="splash-text">The Home For All Cricketers</h1>
+        <div class="loading">
+        <p>Loading...</p><br>
+        <progress></progress>
+        </div>
+	</div>
+    <div class="topnav">
+        <i id="icon-1" class="fa fa-caret-square-o-right" onclick="showNavbar()"></i>
+        <i id="icon-2" class="fa fa-caret-square-o-left" onclick="hideNavbar()"></i> <br>
+        <center>
+            <a href="#box-1" class="a-1" onclick="hideNavbar()">Home</a> <br><br>
+            <a href="#box-2" class="a-2" onclick="hideNavbar()">About Us</a> <br><br>
+            <a href="#box-3" class="a-3" onclick="hideNavbar()">Batting Gear</a> <br><br>
+            <a href="#box-4" class="a-4" onclick="hideNavbar()">Cricket Clothes</a> <br><br>
+            <a href="#box-5" class="a-5" onclick="hideNavbar()">Sponsors</a> <br><br>
+        </center>
+    </div>
+    <div class="top-right">
+        <i class="fa fa-shopping-cart" onclick="showCart()">My Cart</i><br><hr>
+        <div class="cart-dropdown"></div>
+        <i class="fa fa-star" onclick="showFav()">My Favourites</i>
+        <div class="fav-dropdown"></div>
+        
+    </div>
+    <div id="box-1">
+        <div class="logo">
+            <a href="CodeYoungFinalProject.html"><img class="logo"src="CompanyLogo.png"></a>
+        </div>
+        <h1 id="welcome">WELCOME TO EAGLE CRICKET ONLINE STORE</h1>
+        <div class="sales"></div>
+        <div class="shop">
+            <img src="shop-img.png">
+            <h2 class="shop-txt">Eagle Cricket<br>Address: 110 Sunrise Rd, Hyderabad, Telengana</h2>
+        </div>
+        </div>
+        <div id="box-2">
+            <h1>Our History</h1><br><br><br>
+            <h3 class="abt-history">The Eagle Cricket Association started in 2007. Founded by Sir Vangipurapu Venkata Sai Laxman(VVS Laxman), the shop's main mission
+                was to improve the cricketing market. After 3 years of hardcore work, VVS Laxman and his team were able to finally open up their 
+                first physical store in Hyderabad, India on May 8th 2010. From there onwards we have been able to open up shops in many cities
+                around the world which consist of Mumbai(India), Bangalore(India), Chennai(India), Melbourne(Australia) and Sydney(Australia). </h3>
+            <h1>Our Members</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div class="member">
+                            <img src="owner-img.png" alt="profile image">
+                            <h2>VVS Laxman</h2>
+                            <h3 class="role">Owner</h3>
+                            <p>
+                                <i id="icon-3" class="fa fa-phone" aria-hidden="true"></i>+91 0123456789 <br>
+                                <i id="icon-4" class="fa fa-envelope" aria-hidden="true"></i>vvs@gmail.com 
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="member">
+                            <img src="manager-img.png" alt="profile image">
+                            <h2>Rahul D</h2>
+                            <h3 class="role">Manager</h3>
+                            <p>
+                                <i id="icon-3" class="fa fa-phone" aria-hidden="true"></i>+91 9876543210 <br>
+                                <i id="icon-4" class="fa fa-envelope" aria-hidden="true"></i>rahuld@gmail.com 
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="member">
+                            <img src="employee-of-the-month-img.png" alt="profile image">
+                            <h2>Virat K</h2>
+                            <h3 class="role">Employee of the Month</h3>
+                            <p>
+                                <i id="icon-3" class="fa fa-phone" aria-hidden="true"></i>+91 0123498765 <br>
+                                <i id="icon-4" class="fa fa-envelope" aria-hidden="true"></i>vk@gmail.com 
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="box-3">
+        <h1>Batting Gear</h1>
+        <input class="search-bar" type="text" placeholder="Search Batting Gear">
+        <table>
+            <tr>
+                <td>
+                    <div class="batting-gear">
+                        <img src="batting-gear-1-img.png" alt="profile image">
+                        <h2>Koookaburra Shadow 2.3 Cricket Bat</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5"class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="batting-gear">
+                        <img src="batting-gear-1-img.png" alt="profile image">
+                        <h2>Koookaburra Shadow 2.3 Cricket Bat</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="batting-gear">
+                        <img src="batting-gear-1-img.png" alt="profile image">
+                        <h2>Koookaburra Shadow 2.3 Cricket Bat</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites</button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="batting-gear">
+                        <img src="batting-gear-1-img.png" alt="profile image">
+                        <h2>Koookaburra Shadow 2.3 Cricket Bat</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <div class="batting-gear">
+                        <img src="batting-gear-1-img.png" alt="profile image">
+                        <h2>Koookaburra Shadow 2.3 Cricket Bat</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5"class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="batting-gear">
+                        <img src="batting-gear-1-img.png" alt="profile image">
+                        <h2>Koookaburra Shadow 2.3 Cricket Bat</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="batting-gear">
+                        <img src="batting-gear-1-img.png" alt="profile image">
+                        <h2>Koookaburra Shadow 2.3 Cricket Bat</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites</button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="batting-gear">
+                        <img src="batting-gear-1-img.png" alt="profile image">
+                        <h2>Koookaburra Shadow 2.3 Cricket Bat</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="box-4">
+        <h1>Cricket Clothing</h1>
+        <input class="search-bar" type="text" placeholder="Search Crciket Wear">
+        <table>
+            <tr>
+                <td>
+                    <div class="cricket-clothing">
+                        <img src="cricket-clothing-img-1.png" alt="profile image">
+                        <h2>India 2007 T20 WC Jersey</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5"class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="cricket-clothing">
+                        <img src="cricket-clothing-img-1.png" alt="profile image">
+                        <h2>India 2007 T20 WC Jersey</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="cricket-clothing">
+                        <img src="cricket-clothing-img-1.png" alt="profile image">
+                        <h2>India 2007 T20 WC Jersey</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites</button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="cricket-clothing">
+                        <img src="cricket-clothing-img-1.png" alt="profile image">
+                        <h2>India 2007 T20 WC Jersey</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <div class="cricket-clothing">
+                        <img src="cricket-clothing-img-1.png" alt="profile image">
+                        <h2>India 2007 T20 WC Jersey</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5"class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="cricket-clothing">
+                        <img src="cricket-clothing-img-1.png" alt="profile image">
+                        <h2>India 2007 T20 WC Jersey</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="cricket-clothing">
+                        <img src="cricket-clothing-img-1.png" alt="profile image">
+                        <h2>India 2007 T20 WC Jersey</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites</button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="cricket-clothing">
+                        <img src="cricket-clothing-img-1.png" alt="profile image">
+                        <h2>India 2007 T20 WC Jersey</h2>
+                        <h3>₹7999</h3>
+                        <p>
+                            <button><i id="icon-5" class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart <br></button>
+                            <button><i id="icon-6" class="fa fa-star" aria-hidden="true"></i> Add To Favourites </button>
+                            <button><i id="icon-7" class="fa fa-rupee" aria-hidden="true"></i> Buy Now <br></button>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="box-5">
+        <h1>OUR SPONSORS</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.sunrisershyderabad.in/" target="_blank"><img src="sponsors-1.png" class="sponsors-img"></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.rolls-roycemotorcars.com/en_GB/home.html"><img src="sponsors-2.png" class="sponsors-img"></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://mplsports.in/"><img src="sponsors-3.png" class="sponsors-img"></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.cadburygifting.in/"><img src="sponsors-4.png" class="sponsors-img"></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.lays.com/"><img src="sponsors-5.png" class="sponsors-img"></a>
+    </div>
+    </body>
+    <script src="FinalProject.js"></script>
+</body>
+</html>

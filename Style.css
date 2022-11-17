@@ -1,0 +1,421 @@
+/* Home Page */
+* {
+    margin: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color:lightgrey;
+}
+.splash{
+    background-color:maroon;
+    color:rgb(221, 142, 23);
+    position: fixed;
+    width: 100%;
+    height:100%;
+    z-index: 200;
+    border:rgb(97, 25, 25);
+    margin:0;
+    padding:0;
+    animation-name:startnow;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes startnow{
+    0%{
+        opacity: 1;
+        z-index: 200;
+    }
+    100%{
+        opacity: 0;
+        z-index: -200;
+    }
+}
+.splash-img{
+    position: absolute;
+    left:38.50%;
+    top:5%;
+    animation-name: first;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    z-index: 200;
+}
+.loading{
+    position: absolute;
+    left:30%;
+    top:65%;
+    animation-name: first;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    z-index: 200;
+    font-size: 60px;
+}
+@keyframes first{
+    0%{
+        opacity: 0;
+        z-index: 200;
+    }
+    50%{
+        opacity:1;
+        z-index: 200;
+    }
+    100%{
+        opacity: 0;
+        z-index: -200;
+    }
+}
+.splash-text{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left:28.75%;
+    top:47.75%;
+    animation-name: second;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity:0;
+    z-index: 200;
+}
+@keyframes second{
+    0%{
+        opacity: 0;
+        z-index: 200;
+    }
+    50%{
+        opacity:1;
+        z-index:200;
+    }
+    100%{
+        opacity: 0;
+        z-index: -200;
+    }
+}
+
+.topnav a {
+    font-size: 40px;
+    font-family: calibri;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-right: 100px;
+    color: cornsilk;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    text-shadow: 0px 0px 10px white;
+    width: 300px;
+}
+
+.topnav {
+    background-color: grey;
+    width: fit-content;
+    height: 100vh;
+    position: fixed;
+    left: -355px;
+    transition: 0.7s;
+    z-index: 2;
+}
+.top-right{
+    background-color: grey;
+    width: 17vw;
+    height: 8vh;
+    position: fixed;
+    right: 1px;
+    transition: 0.7s;
+    z-index: 2;
+}
+.top-right i{
+    font-size: 18.75px;
+    background-color: grey;
+    padding: 5px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    color: cornsilk;
+    text-align: center;
+}
+.top-right i:hover {
+    text-shadow: 0px 0px 10px white;
+}
+.cart-dropdown{
+    height: 400px;
+    width: 350px;
+    background-color: red;
+    margin-top: 10px;
+    display:none;
+    transition: 0.6s;
+    z-index:2;
+ }
+ .fav-dropdown{
+    height: 400px;
+    width: 330px;
+    background-color: orange;
+    margin-top: 10px;
+    display:none;
+    transition: 0.6s;
+    z-index:2;
+ }
+ hr{
+     z-index:3;
+ }
+#icon-1 {
+    display: block;
+    cursor: pointer;
+}
+
+#icon-2 {
+    display: none;
+    cursor: pointer;
+}
+#icon-1, #icon-2{
+    font-size:48px;
+    color:greenyellow;
+    margin-left:89%;
+}
+    
+#icon-1:hover,
+#icon-2:hover {
+    text-shadow: 0px 0px 3px white;
+}
+.logo{
+    height: 280px;
+    width: 408px;
+    margin-left: 285px;
+}
+#welcome{
+    text-align:center;
+}
+#box-1 .sales{
+    height: 350px;
+    border: black 3px solid;
+    background-image: url("sales-1.png");
+    animation-name: sales;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-direction:initial;
+    animation-timing-function: linear;
+    margin-left: 150px;
+    margin-right:100px;
+    background-size:cover;
+}
+  @keyframes sales {
+      0%{
+        background-image: url("sales-img-1.png");
+      }
+      19.5%{
+        background-image: url("sales-img-1.png");
+      }
+      20.5%{
+        background-image: url("sales-img-2.png");
+      }
+      39.5%{
+          background-image:url("sales-img-2.png")
+      }
+      40.5%{
+          background-image:url("sales-img-3.png")
+      }
+      59.5%{
+          background-image:url("sales-img-3.png")
+      }
+      60.5%{
+          background-image: url("sales-img-4.png")
+      }
+      79.5%{
+        background-image: url("sales-img-4.png")
+      }
+      80.5%{
+          background-image: url("sales-img-5.png")
+      }
+      99.5%{
+        background-image: url("sales-img-5.png")
+      }
+  }
+.shop{
+    text-align: center;
+    margin-top:60px;
+    margin-bottom: 60px;
+}
+.shop-txt{
+    font-size:15px;
+}
+/* About Us */
+.abt-history{
+    font-size:32.5px;
+    font-family: 'Arial, sans serif';
+    color: black;
+    padding-left:80px;
+    padding-right:30px;
+}
+#box-2 h1{
+    font-size: 80px;
+    font-family: calibri;
+    color: midnightblue;
+    margin-bottom: -50px;
+    margin-top: 20px;
+    text-align: center;
+}
+#box-2 table{
+    margin: 120px;
+}
+
+#box-2 p{
+    color: black;
+    font-size: 25px;
+}
+
+.member img{
+    height: 300px;
+    width: 400px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.member img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+}
+#box-2 td{
+    padding: 2px 30px 7px 20px;
+    text-align: left;
+}
+#icon-3, #icon-4{
+    font-size: 25px;
+}
+#icon-3{
+    color: green;
+}
+#icon-4{
+    color: red;
+}
+#box-2 h2{
+    font-size: 45px;
+    font-family: castellar;
+    color: darkblue;
+    text-align: center;
+}
+.role{
+    font-size: 28px;
+    font-family: castellar;
+    color: maroon;
+    text-align: center;
+}
+/* Batting Gear */
+.search-bar{
+    border: 3px bold green;
+    margin-left: 480px;
+    margin-top:20px;
+    border-radius:50px;
+    width:700px ;
+    height:40px;
+}
+#box-3 table{
+    margin: 120px;
+
+}
+.batting-gear{
+    border: 2px solid grey;
+    
+}
+.batting-gear img{
+    height: 200px;
+    width: 300px;
+    transition: 0.3s;
+}
+.batting-gear img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+}
+#box-3 td{
+    padding: 2px 30px 7px 20px;
+    text-align: left;
+}
+#box-3 h1{
+    font-size:90px;
+    color:maroon;
+    text-align: center;
+}
+#icon-5, #icon-6, #icon-7{
+    font-size: 20px;
+}
+#icon-5{
+    color: black;
+}
+#icon-6{
+    color:gold;
+}
+#icon-7{
+    color:black;
+}
+/* Cricket Clothing */
+.search-bar{
+    border: 3px bold green;
+    margin-left: 480px;
+    margin-top:20px;
+    border-radius:50px;
+    width:700px ;
+    height:40px;
+}
+#box-4 table{
+    margin: 120px;
+
+}
+.cricket-clothing{
+    border: 2px solid grey;
+    
+}
+.cricket-clothing img{
+    height: 200px;
+    width: 300px;
+    transition: 0.3s;
+}
+.cricket-clothing img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+}
+#box-4 td{
+    padding: 2px 30px 7px 20px;
+    text-align: left;
+}
+#box-4 h1{
+    font-size:90px;
+    color:maroon;
+    text-align: center;
+}
+#icon-5, #icon-6, #icon-7{
+    font-size: 20px;
+}
+#icon-5{
+    color: black;
+}
+#icon-6{
+    color:gold;
+}
+#icon-7{
+    color:black;
+}
+/* Sponsors */
+#box-5 h1{
+    text-align: center;
+    font-size: 70px;
+    color:maroon;
+}
+.sponsors-img{
+    margin-left: 230px;
+    margin-right:100px;
+    height: 350px;
+    width: 1100px;
+}
